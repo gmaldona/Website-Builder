@@ -1,0 +1,63 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+h3 {
+    text-align: center;
+}
+
+a {
+    color: #6f69b1;
+}
+
+a:visited {
+    color: #6f69b1;
+}
+
+#wrapper {
+    height: 100vh;
+    }
+
+td {
+    text-align: center;
+    padding: 15px;
+  }
+
+.project1, .project2, .project3, .project4, .project5 {
+    text-align: center;
+    border: 5px;
+    padding: 30px;
+    border-style: solid;
+}
+
+.project1 {
+    border-color: #121551;   
+}
+
+.project2 {
+    border-color: #263089; 
+}
+
+.project3 {
+    border-color: #3354a4;
+}
+
+.project4 {
+    border-color: #4283b8;
+}   
+
+.project5 {
+    border-color: #2192bf;
+}
+
+html {
+    background-color: #eddcbb;
+
+}
+
+.title {
+    font-size: 35px;
+    font-weight: bold;
+}
