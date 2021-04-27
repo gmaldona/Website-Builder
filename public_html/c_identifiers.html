@@ -1,6 +1,7 @@
 <html>
 
     <head>
+        <script type="text/javascript" src="json_data/a1_json.json"></script>
         <script type="text/javascript" src="c.js"></script>
         <link rel="stylesheet" href="styles.css">  
     </head>
@@ -8,9 +9,18 @@
     <body>
         <img id="C" src="https://img.icons8.com/color/48/000000/c-programming.png"/>
         <span class="title" style="color: #121551">C Project Identifiers</span>
+        <br><span style="font-size:30px; padding: 200px"><a href="index.html"> Home Page </a> </span>
         <div id="identifiers">
             
         </div>
+        <script>
+            var data = JSON.parse(file1)
+            identifiers = ""
+            console.log(data.identifiers)
+            data.identifiers.forEach(id => identifiers = `${identifiers}${id}<br>`)
+            console.log(identifiers)
+            document.getElementById(`identifiers`).innerHTML = identifiers;
+        </script>
     </body>
 
 </html>

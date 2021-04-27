@@ -1,6 +1,7 @@
 <html>
 
     <head>
+        <script type="text/javascript" src="json_data/a2_json.json"></script>
         <script type="text/javascript" src="clj.js"></script>
         <link rel="stylesheet" href="styles.css">  
     </head>
@@ -8,8 +9,16 @@
     <body>
         <img id="CLJ"  src="https://upload.wikimedia.org/wikipedia/commons/5/5d/Clojure_logo.svg" width="64px", height="64px">
         <span class="title" style="color: #121551">Clojure Project Identifiers</span>
+        <br><span style="font-size:30px; padding: 200px"><a href="index.html"> Home Page </a> </span>
         <div id="identifiers">
-            
+            <script>
+            var data = JSON.parse(file2)
+            identifiers = ""
+            console.log(data.identifiers)
+            data.identifiers.forEach(id => identifiers = `${identifiers}${id}<br>`)
+            console.log(identifiers)
+            document.getElementById(`identifiers`).innerHTML = identifiers;
+            </script>
         </div>
     </body>
 

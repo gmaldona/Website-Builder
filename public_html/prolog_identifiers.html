@@ -1,6 +1,7 @@
 <html>
 
     <head>
+        <script type="text/javascript" src="json_data/a4_json.json"></script>
         <script type="text/javascript" src="prolog.js"></script>
         <link rel="stylesheet" href="styles.css">  
     </head>
@@ -8,8 +9,16 @@
     <body>
         <img id="PROLOG" src="https://dashboard.snapcraft.io/site_media/appmedia/2020/04/Prolog-logo-512.png" width="64px" height="64px"/>
         <span class="title" style="color: #121551">Prolog Project Identifiers</span>
+        <br><span style="font-size:30px; padding: 200px"><a href="index.html"> Home Page </a> </span>
         <div id="identifiers">
-            
+            <script>
+                var data = JSON.parse(file4)
+                identifiers = ""
+                console.log(data.identifiers)
+                data.identifiers.forEach(id => identifiers = `${identifiers}${id}<br>`)
+                console.log(identifiers)
+                document.getElementById(`identifiers`).innerHTML = identifiers;
+            </script>
         </div>
     </body>
 

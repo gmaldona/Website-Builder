@@ -1,12 +1,17 @@
 <html>
 
     <head>
+        <script type="text/javascript" src="json_data/a1_json.json"></script>
+        <script type="text/javascript" src="json_data/a2_json.json"></script>
+        <script type="text/javascript" src="json_data/a3_json.json"></script>
+        <script type="text/javascript" src="json_data/a4_json.json"></script>
+        <script type="text/javascript" src="json_data/a5_json.json"></script>
         <script type="text/javascript" src="index.js"></script>
         <link rel="stylesheet" href="styles.css">
     </head>
 
     <body>
-        <h1> Gregory Maldonado's Programming Languages Projects (CSC 344) </h1>
+        <h1> Gregory Maldonado's <br>Programming Languages Projects (CSC 344) </h1>
         <h3> <a href="#C">C </a> | <a href="#CLJ">Clojure</a> | <a href="#SCALA">Scala </a> | <a href="#PROLOG">Prolog </a> | <a href="#PY">Python </a></h3>
         <hr style="border-color: black">
         <h3>
@@ -89,8 +94,28 @@
             </tr>
           </table>
         </h3>
-
+        <script>
+            data = null
+            for (i = 1; i < 6; i++) {
+                switch (i) {
+                    case 1:
+                        var data = JSON.parse(file1)
+                    case 2: 
+                        var data = JSON.parse(file2)
+                    case 3:
+                        var data = JSON.parse(file3)
+                    case 4:
+                        var data = JSON.parse(file4)
+                    case 5:
+                        var data = JSON.parse(file5)
+                }
+                document.getElementById(`project${i}_filename`).innerHTML = data.filename;
+                document.getElementById(`project${i}_lines`).innerHTML    = `${data.lines} lines`
+            }
+        </script>
 
     </body>
+
+
 
 </html>
