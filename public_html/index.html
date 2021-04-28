@@ -99,18 +99,27 @@
             for (i = 1; i < 6; i++) {
                 switch (i) {
                     case 1:
-                        var data = JSON.parse(file1)
+                        data = JSON.parse(file1)
+                        document.getElementById(`project1_filename`).innerHTML = data.filename;
+                        document.getElementById(`project1_lines`).innerHTML    = `${data.lines} lines`
                     case 2: 
-                        var data = JSON.parse(file2)
+                        data = JSON.parse(file2)
+                        document.getElementById(`project2_filename`).innerHTML = data.filename;
+                        document.getElementById(`project2_lines`).innerHTML    = `${data.lines} lines`
                     case 3:
-                        var data = JSON.parse(file3)
+                        data = JSON.parse(file3)
+                        document.getElementById(`project3_filename`).innerHTML = data.filename;
+                        document.getElementById(`project3_lines`).innerHTML    = `${data.lines} lines`
                     case 4:
-                        var data = JSON.parse(file4)
+                        data = JSON.parse(file4)
+                        document.getElementById(`project4_filename`).innerHTML = data.filename;
+                        document.getElementById(`project4_lines`).innerHTML    = `${data.lines} lines`
                     case 5:
-                        var data = JSON.parse(file5)
+                        data = JSON.parse(file5)
+                        document.getElementById(`project5_filename`).innerHTML = data.filename;
+                        document.getElementById(`project5_lines`).innerHTML    = `${data.lines} lines`
                 }
-                document.getElementById(`project${i}_filename`).innerHTML = data.filename;
-                document.getElementById(`project${i}_lines`).innerHTML    = `${data.lines} lines`
+                
             }
         </script>
 
