@@ -17,4 +17,4 @@ This JSON data is displayed in the HTML files found in the repository.
 
 The python script also contains an email function where given an email, the script will use ```mutt``` to send a .tar.gz file of this repository. 
 
-The website is also held on the Oswego Computer Science Department Servers www.cs.oswego.edu/~gmaldona/CSC344/.
+The website is also held on the Oswego Computer Science Department Servers www.cs.oswego.edu/~gmaldona/csc344/.
